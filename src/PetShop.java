@@ -45,4 +45,14 @@ public class PetShop {
             }
         }
     }
+
+    public void buyPetByCost(double idealCost){
+        for(int i = 0; i < pets.length; i++){
+            if(pets[i].getCost() < idealCost){
+                System.out.println("You have bought " + pets[i].getName() + " they are " + pets[i].getAge() + " year(s) old!");
+                pets[i] = null;
+                break;
+            }
+        }
+    }
 }

@@ -5,7 +5,8 @@ public class Goldfish extends Pet {
         super.setCost(cost);
     }
 
+    @Override
     public String makeNoise(){
-        return super.getName() + " Bloop Bloop!";
+        return super.makeNoise() + " They're a goldfish!";
     }
 }
